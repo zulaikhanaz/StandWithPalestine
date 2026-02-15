@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campaigns | Stand With Palestine</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="campaigns">
+
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="logo-swp.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-right">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a class="active" href="campaigns.html">Campaigns</a></li>
+    </ul>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search..." onkeydown="handleSearch(event)">
+  </nav>
+</header>
+
+<section id="campaigns" class="content-box campaigns-section">
+  <h1>Active Campaigns</h1>
+
+  <!-- Campaign Cards with Image and Modal -->
+  <div class="campaign-grid">
+    <article class="campaign-card">
+      <img src="images/campaign1.jpg" alt="Campaign Image">
+      <h2>Ceasefire Now Petition</h2>
+      <p>Join the global call for an immediate ceasefire and protection of civilian lives.</p>
+      <button onclick="openModal('modal1')">Learn More</button>
+    </article>
+
+    <article class="campaign-card">
+      <img src="images/campaign2.jpg" alt="Campaign Image">
+      <h2>Humanitarian Aid Fundraiser</h2>
+      <p>Support families affected by conflict through emergency relief and essential resources.</p>
+      <button onclick="openModal('modal2')">Learn More</button>
+    </article>
+
+    <article class="campaign-card">
+      <img src="images/campaign3.jpg" alt="Campaign Image">
+      <h2>Boycott & Accountability Campaign</h2>
+      <p>Advocate for ethical responsibility and awareness through peaceful economic activism.</p>
+      <button onclick="openModal('modal3')">Learn More</button>
+    </article>
+  </div>
+</section>
+
+<!-- FEATURE ADDED: Popup Modals -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Ceasefire Now Petition</h2>
+    <p>Join us in calling for an immediate ceasefire to protect civilians and prevent further loss of life.  
+  By signing this petition, you are lending your voice to demand urgent humanitarian action, support the safety
+  of affected communities, and promote a peaceful resolution to the ongoing conflict.</p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Humanitarian Aid Fundraiser</h2>
+    <p>Support families and communities affected by the conflict through our humanitarian aid fundraiser.  
+  Your contributions provide essential supplies such as food, clean water, medical care, and shelter.  
+  Every donation helps alleviate suffering and shows solidarity with those in urgent need.</p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Boycott & Accountability Campaign</h2>
+    <p>Join our campaign to promote accountability and justice through responsible consumer choices.  
+  By participating in targeted boycotts and raising awareness, you can pressure institutions and corporations to respect human rights and support ethical practices.  
+  Together, we amplify the call for fair treatment and systemic change.</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Stand With Palestine</p>
+</footer>
+</body>
+</html>

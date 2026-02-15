@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News | Stand With Palestine</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="news">
+
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="logo-swp.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-right">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="news.html">News</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+    </ul>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search News..." onkeydown="handleSearch(event)">
+  </nav>
+</header>
+
+<section id="news" class="content-box news-section">
+  <h1>Latest News</h1>
+
+  <!-- News Cards with Image -->
+  <div class="news-grid">
+    <article class="news-card">
+      <img src="images/newint.png" alt="News Image">
+      <h3>Neocolonialism in Gaza</h3>
+      <p>When will Palestinians be free of repackaged colonialism?</p>
+    </article>
+
+    <article class="news-card">
+      <img src="images/news2.jpg" alt="News Image">
+      <h3>Solidarity rally for Sudan and Palestine held in Tokyo</h3>
+      <p>Organizers urged people in Japan and beyond to stand in solidarity with Palestine and Sudan...</p>
+    </article>
+
+    <article class="news-card">
+      <img src="images/news3.jpg" alt="News Image">
+      <h3>More Palestinians return to Gaza via Rafah as Israeli attacks continue</h3>
+      <p>Those returning to Gaza have described being subjected to humiliating searches and interrogations by the Israeli military.</p>
+    </article>
+  </div>
+</section>
+
+<!-- News video -->
+<section class="content-box video-section">
+  <h2>Featured Video</h2>
+
+  <div class="video-container">
+    <video controls>
+  <source src="video/video1.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-caption">
+    <h3>UNRWA health teams continue delivering life-saving services in Gaza</h3>
+    <p>
+      13 FEB 2026<br>NRWA’s essential assistance continues every day — from primary and maternal care, to vaccinations and treatment for chronic conditions.
+    </p>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2026 Stand With Palestine</p>
+</footer>
+</body>
+</html>

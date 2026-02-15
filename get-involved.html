@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Involved | Stand With Palestine</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="get-involved">
+
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html"><img src="logo-swp.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-right">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a class="active" href="get-involved.html">Get Involved</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+    </ul>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search..." onkeydown="handleSearch(event)">
+  </nav>
+</header>
+
+<section class="content-box volunteer-section">
+  <h2>Volunteer</h2>
+  <p>Join our team to organize events, create content, and spread awareness.</p>
+  <img src="images/logo-swp.png" alt="Volunteer Image" >
+</section>
+
+<section class="content-box">
+  <h2>Donate</h2>
+  <p>Your contributions help fund humanitarian aid and advocacy campaigns.</p>
+  
+
+  <!-- FEATURE ADDED: Donation Form -->
+  <form id="donationForm">
+    <label for="donorName">Full Name:</label>
+    <input type="text" id="donorName" name="donorName" required>
+
+    <label for="donorEmail">Email:</label>
+    <input type="email" id="donorEmail" name="donorEmail" required>
+
+    <label for="amount">Donation Amount ($):</label>
+    <input type="number" id="amount" name="amount" min="1" required>
+
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment">
+      <option value="paypal">PayPal</option>
+      <option value="credit">Credit Card</option>
+      <option value="bank">Bank Transfer</option>
+    </select>
+
+    <label>
+      <input type="checkbox" name="newsletter"> Subscribe to newsletter
+    </label>
+
+    <button type="submit">Donate Now</button>
+  </form>
+</section>
+
+<section class="content-box participate-section">
+  <h2>Participate</h2>
+  <p>Attend peaceful protests, educational webinars, and interactive online discussions to raise awareness and amplify Palestinian voices.
+    Connect with advocates, learn from experts, and become part of a growing global movement working toward justice and humanitarian support.</p>
+  <img src="images/participate.jpg" alt="Participate Image">
+  <button class="participate-btn">Join an Event</button>
+
+</section>
+
+<footer>
+  <p>© 2026 Stand With Palestine</p>
+</footer>
+</body>
+</html>
